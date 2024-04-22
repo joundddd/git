@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+    <meta charset="UTF-8">
+    <title>bài 5</title>
+    <style>
+        body{
+            width:960px;
+            margin:0px auto;
+        }
+        h1{
+            color: chartreuse;
+        }
+    </style>
+</head>
+<body>
+<h1>tính diện tích tam giác vuông</h1>
+<p>nhâp chiều dài vào đây </p><input type="number" id="hihi" placeholder="nhập vào đây"><br><br>
+<p>nhâp chiều rộng vào đây </p><input type="number" id="haha" placeholder="nhập vào đây">
+<button onclick="one()">tìm kiếm</button>
+<p id="hoho"></p>
+<script>
+    function one(){
+        let a = document.getElementById("hihi").value;
+        let b = document.getElementById("haha").value;
+        if(1/2*a*b){
+            document.getElementById("hoho").innerHTML='diện tích tam giác vuông là:'+ (1/2*a*b);
+        }
+    }
+</script>
+</body>
+</html>

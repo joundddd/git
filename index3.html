@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai 8</title>
+</head>
+<body>
+<h1>xem tuổi của bạn</h1>
+<p>nhập tuổi của ban vào đây</p><input type="number" id="so dau" placeholder="nhập tuổi của bn vào đây">
+<button onclick="one()">xác nhân</button>
+<p id="hihi"></p>
+<p id="hoho"></p>
+<script>
+    function one(){
+        let a = document.getElementById("so dau").value;
+        if(a <= 120 || a<0){
+            document.getElementById("hihi").innerHTML='bạn là người '+ (a <= 120 || a<0);
+        }else{
+            document.getElementById("hoho").innerHTML='bạn ko phải là hunmen'
+        }
+    }
+</script>
+</body>
+</html>
